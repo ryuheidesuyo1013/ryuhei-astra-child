@@ -1,0 +1,15 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# エディタ設定
+.vscode/
+.idea/
+
+# 一時ファイル
+*.tmp
+*.log
+*~
