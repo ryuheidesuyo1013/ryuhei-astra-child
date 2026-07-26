@@ -1,8 +1,8 @@
-/*
 @charset "utf-8";
+/*
 Theme Name: Ryuhei Astra Child
 Theme URI: https://ryuheithirteen.site/
-Description: Astra�̎q�e�[�}�ł��B
+Description: Astraの子テーマです。
 Author: Ryuhei Fujimaki
 Author URI: https://ryuheithirteen.site/
 Template: astra
@@ -12,7 +12,7 @@ Text Domain: ryuhei-astra-child
 
 /* ===== Scroll Fade In ===== */
 
-/* �ŏ��̏�� */
+/* 初期状態 */
 .fade-in {
     opacity: 0;
     transform: translateY(40px);
@@ -21,8 +21,25 @@ Text Domain: ryuhei-astra-child
         transform 0.6s ease;
 }
 
-/* �\�����ꂽ��� */
+/* 表示された状態 */
 .fade-in.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ===== Works Slide In ===== */
+
+/* 初期状態：左側に移動して非表示 */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+/* 画面内に入った状態 */
+.slide-in-left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
 }
